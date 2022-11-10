@@ -1,0 +1,461 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: #000;
+}
+
+.first-conteiner {
+    background: url('../images/bg_netflix.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+}
+/*FILTRO DE FUNDO*/
+.bg-img-gradient {
+    height: 100vh;
+    background: rgba(0,0,0,.4);
+    background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8));
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.logo {
+    background: url('../images/logo_netflix.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 45%;
+    width: 50%;
+    margin-left: 50px;
+}
+
+.right-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 50px;
+}
+.lang-select select {
+    background-color: transparent;
+    padding: 7px 17px;
+    border-radius: 3px;
+    color: #FFF;
+    font-size: 15px;
+}
+.lang-select select option {
+    background-color: #CCC;
+    margin: 5px;
+}
+
+.button {
+    background-color: #e50914;
+    border: none;
+    width: 80px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+ .login-button {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+    padding: 7px 17px;
+    border: none;
+    width: 80px;
+    border-radius: 3px;
+    color: #FFF;
+ }
+
+.main {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    flex-direction: column;
+    color: #FFF;
+}
+.main h1 {
+    font-size: 50px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.main h2 {
+    font-size: 25px;
+    font-weight: 100;
+    padding-top: 20px;
+    color: #CCC;
+    text-align: center;
+}
+
+.input-area {
+    width: 700px;
+    margin-top: 40px;
+}
+
+.input-area .subTitle {
+    color: #FFF;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+.label-float{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: 20px;
+} 
+
+.label-float .input-item{
+    border: 0;
+    height: 58px;
+    outline: none;
+    min-width: 70%;
+    font-size: 15px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    appearance:none;
+    border-radius: 0;
+    box-sizing:border-box;
+}
+.label-float .input-item:focus{
+    border: 2px solid #3951b2;
+    padding-left: 10px;
+}
+.label-float input.item::placeholder{
+    color:transparent;
+}
+.label-float label{
+    pointer-events: none;
+    position: absolute;
+    color: #AAA;
+    top: 0px;
+    left: 20px;
+    margin-top: 40px;
+    margin-left: 10px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+} 
+.label-float input:focus:required:invalid{
+    border-bottom: 2px solid #d49c00;
+}
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label{
+  font-size: 13px;
+  margin-top: 23px;
+}
+.input-button {
+    color: #FFF;
+    border-radius: 0;
+    font-size: 25px;
+    min-width: 25%;
+}
+.input-button:hover {
+    background-color: #ff000d;
+}
+
+
+/*CONTEINER*/
+
+.conteiner {
+    border-top: 8px solid #222;
+    color: #FFF; 
+    height: 466px;
+}
+
+/* SECOND CONTEINER*/
+
+.second-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.second-conteiner .leftSide {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 100px;
+    gap: 30px;
+
+}
+.second-conteiner .leftSide h1{
+    font-size: 50px;
+}
+.second-conteiner .leftSide p{
+    font-size: 30px;
+}
+.second-conteiner .rightSide {
+    width: 50%;
+}
+.second-conteiner .tv-image {
+    width: 550px;
+}
+
+/*Third Conteiner*/
+
+.third-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.third-conteiner .leftSide {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 100px;
+    gap: 30px;
+
+}
+.third-conteiner .leftSide h1{
+    font-size: 40px;
+}
+.third-conteiner .leftSide p{
+    font-size: 30px;
+}
+.third-conteiner .rightSide {
+    width: 50%;
+}
+.third-conteiner .divice-image {
+    width: 500px;
+    margin-left: 50px;
+}
+
+
+/* FOURTH CONTEINER*/
+
+.fourth-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fourth-conteiner .leftSide {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    margin-left: 150px;
+    gap: 30px;
+
+}
+.fourth-conteiner .leftSide h1{
+    font-size: 50px;
+}
+.fourth-conteiner .leftSide p{
+    font-size: 25px;
+}
+.fourth-conteiner .rightSide {
+    width: 50%;
+}
+.fourth-conteiner .infantil-image {
+    width: 520px;
+    margin-right: 25px;
+}
+
+/*Fifth Conteiner*/
+.fifth-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.fifth-conteiner .leftSide {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    margin-right: 100px;
+    gap: 30px;
+
+}
+.fifth-conteiner .leftSide h1{
+    font-size: 50px;
+}
+.fifth-conteiner .leftSide p{
+    font-size: 25px;
+}
+.fifth-conteiner .rightSide {
+    width: 50%;
+}
+.fifth-conteiner .cel-image {
+    width: 520px;
+    margin-left: 50px;
+}
+
+/*Sixth Conteiner*/
+.sixth-conteiner {
+    border-top: 8px solid #222;
+    color: #FFF; 
+    padding: 50px;
+}
+.sixth-conteiner--itens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.question-title {
+    font-size: 35px;
+}
+
+.question-itens {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 50px;
+    gap: 9px;
+}
+
+.question-item button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background-color: #333;
+    font-size: 25px;
+    width: 815px;
+    height: 74px;
+    padding: 0 30px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.question-item button p{
+    font-size: 50px;
+}
+
+.sixth-conteiner .input-area {
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+
+/*Footer*/
+.footer-conteiner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 430px;
+    color: #888;
+}
+.footer-conteiner a{
+    text-decoration: none;
+    color: #888;
+}
+.footer-conteiner a:hover {
+    text-decoration: underline;
+}
+
+.footer-body {   
+    padding-top: 75px;
+    width: 70%;
+}
+
+.footer-menu {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 13px;
+}
+.list-1, .list-2, .list-3, .list-4 {
+    display: block;
+    flex: 1;
+}
+.list-1 li, .list-2 li, .list-3 li, .list-4 li {
+   line-height: 30px;
+}
+
+.lang-footer {
+    margin-top: 20px;
+    
+}
+.lang-footer select {
+    background-color: transparent;
+    padding: 17px 29px;
+    border-radius: 3px;
+    color: #888;
+    font-size: 17px;
+}
+.lang-footer select option {
+    background-color: black;
+    margin: 5px;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.contato {
+    margin: auto;
+}
+.contato p {
+    margin: 20px;
+}
+/*ICONES*/
+.icons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+span{
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #333;
+    
+}
+li {
+    list-style: none;
+}
+ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    gap: 20px;
+}
+ul div {
+    width: 200px;
+    height: 5px;
+    background-color: #9581F4;
+    
+}
+.fa-facebook, .fa-twitter, .fa-instagram, .fa-linkedin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li:hover span {
+    transition: 0.8s;
+}
+
+ul li:nth-child(2):hover span {
+    background: #2C3456 !important;
+}
+ul li:nth-child(3):hover span {
+    background: #6A9AEE !important;
+}
+ul li:nth-child(4):hover span {
+    background: #CC296C !important;
+}
+ul li:nth-child(5):hover span {
+    background: #2C3456 !important;
+}
